@@ -18,13 +18,13 @@ export class ReparationsController {
     }
 
     @Post()
-    create(@Body() Reparation: Reparation) {
-        return this.service.createReparation(Reparation);
+    create(@Body() reparation: Reparation) {
+        return this.service.createReparation(reparation);
     }
 
     @Put()
-    update(@Body() Reparation: Reparation) {
-        return this.service.updateReparation(Reparation);
+    update(@Body() reparation: Reparation) {
+        return this.service.updateReparation(reparation);
     }
 
     @Delete(':id')

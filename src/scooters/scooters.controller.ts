@@ -1,6 +1,6 @@
 import { Controller, Post, Body, Get, Put, Delete, Param} from '@nestjs/common';
-import { ScootersService } from './Scooters.service';
-import { Scooter } from './Scooter.entity';
+import { ScootersService } from './scooters.service';
+import { Scooter } from './scooter.entity';
 
 @Controller('Scooters')
 export class ScootersController {
@@ -18,13 +18,13 @@ export class ScootersController {
     }
 
     @Post()
-    create(@Body() Scooter: Scooter) {
-        return this.service.createScooter(Scooter);
+    create(@Body() scooter: Scooter) {
+        return this.service.createScooter(scooter);
     }
 
     @Put()
-    update(@Body() Scooter: Scooter) {
-        return this.service.updateScooter(Scooter);
+    update(@Body() scooter: Scooter) {
+        return this.service.updateScooter(scooter);
     }
 
     @Delete(':id')

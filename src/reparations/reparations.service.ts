@@ -19,15 +19,15 @@ export class ReparationsService {
         });
     }
 
-    async createReparation(Reparation: Reparation) {
-        this.ReparationsRepository.insert(Reparation)
+    async createReparation(reparation: Reparation) {
+        this.ReparationsRepository.insert(reparation)
     }
 
-    async updateReparation(Reparation: Reparation) {
-        this.ReparationsRepository.save(Reparation)
+    async updateReparation(reparation: Reparation) {
+        this.ReparationsRepository.save(reparation)
     }
 
-    async deleteReparation(Reparation: Reparation) {
-        this.ReparationsRepository.delete(Reparation);
+    async deleteReparation(reparation: Reparation) {
+        this.ReparationsRepository.delete(reparation);
     }
 }

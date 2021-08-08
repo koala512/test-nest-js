@@ -19,15 +19,15 @@ export class ScootersService {
         });
     }
 
-    async createScooter(Scooter: Scooter) {
-        this.ScootersRepository.insert(Scooter)
+    async createScooter(scooter: Scooter) {
+        this.ScootersRepository.insert(scooter)
     }
 
-    async updateScooter(Scooter: Scooter) {
-        this.ScootersRepository.save(Scooter)
+    async updateScooter(scooter: Scooter) {
+        this.ScootersRepository.save(scooter)
     }
 
-    async deleteScooter(Scooter: Scooter) {
-        this.ScootersRepository.delete(Scooter);
+    async deleteScooter(scooter: Scooter) {
+        this.ScootersRepository.delete(scooter);
     }
 }
