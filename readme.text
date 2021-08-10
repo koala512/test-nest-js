@@ -1,0 +1,9 @@
+exercice 1: 
+
+front visible avec POSTMAN . telechargeable sur https://www.postman.com/downloads/
+modication BDD dans app.module.ts 
+
+exercice 2: 
+
+graphQl doc :   https://docs.nestjs.com/graphql/quick-start
+                https://docs.nestjs.com/graphql/interfaces

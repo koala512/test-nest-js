@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Reparation } from 'src/reparations/reparation.entity';
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 
 @Entity()
 export class Scooter {
@@ -14,4 +15,8 @@ export class Scooter {
 
     @Column({ length: 25 })
     prix:string;
+    reparations: any;
+    
+    @OneToMany(() => Reparation, reparation => reparation.scooter)
+                     reparation: Reparation[];
 }

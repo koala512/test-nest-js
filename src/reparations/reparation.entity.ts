@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Scooter } from 'src/scooters/scooter.entity';
+import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from 'typeorm';
 
 @Entity()
 export class Reparation {
@@ -20,6 +21,9 @@ export class Reparation {
 
     @Column({ length: 50 })
     kilometrage:string;
+
+    @ManyToOne(()=> Scooter, scooter => scooter.reparation)
+                    scooter: Scooter;
 
     
 }
