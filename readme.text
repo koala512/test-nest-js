@@ -1,9 +1,44 @@
-exercice 1: 
+# Modify the type of databases in the file app.module.ts:   
+      {
+        "type": "mysql",            <-----
+        "host": "localhost",
+        "port": 3306,
+        "username": "root",
+        "password": "",
+        "database": "scooter3000",
+        "entities": [Scooter, Reparation], 
+        "synchronize": true
+      }
 
-front visible avec POSTMAN . telechargeable sur https://www.postman.com/downloads/
-modication BDD dans app.module.ts 
+# Start the project :
 
-exercice 2: 
+npm run start
 
-graphQl doc :   https://docs.nestjs.com/graphql/quick-start
-                https://docs.nestjs.com/graphql/interfaces
+front whit  POSTMAN : https://www.postman.com/downloads/
+
+# POSTMAN 
+Once POSTMAN has been launched, in the tab Workspaces select My Workspace. 
+enter the url :http://localhost:3000/scooters
+                or
+               http://localhost:3000/repartions
+and select Body
+
+Use get to send the request.
+example reparation:
+{
+    "nom": "example",
+    "motorisation": "example",
+    "marque": "example",
+    "modele": "example",
+    "kilometrage": "example"
+}
+example scooter:
+{
+    "nomcourt": "example",
+    "description": "example",
+    "prix": "example",
+}
+Use post to receive and read the request.            
+
+
+
